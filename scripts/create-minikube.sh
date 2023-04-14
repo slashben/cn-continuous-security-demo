@@ -54,15 +54,16 @@ else
   exit 1
 fi
 
-exit 0
-kubectl -n security-profiles-operator patch spod spod --type=merge -p '{"spec":{"enableBpfRecorder":true}}'
-# Check the return code of the security operator deployment
+kubectl gadget deploy
+# Check the return code of the gadget deployment
 if [[ $? -eq 0 ]]; then
-  echo "Security operator patched"
+  echo "Gadget deployed"
 else
-  echo "Security operator patch failed"
+  echo "Gadget deployment failed"
   exit 1
 fi
+
+exit 0
 
 
 

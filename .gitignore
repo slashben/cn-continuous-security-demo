@@ -1,2 +1,4 @@
 temp/*
-history.log
+*.log
+network-policies/*.yml
+seccomp-profiles/*.yml
