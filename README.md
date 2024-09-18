@@ -9,11 +9,11 @@ The documentation is designed to guide you through the process of using the tool
 So, whether you are a seasoned developer or just starting with cloud-native applications, this demo is an excellent resource for you to explore. We hope you find this documentation helpful and easy to follow as you delve into the world of cloud-native security.
 
 ## Environment
-* Linux host with `Minikube` & `Qemu` installed
+* Linux host with `Minikube` installed
 * `kubectl`
 * `yq` installed
+* `python` installed
 * `bash`...
-* Inspektor gadget installed
 
 ## Running the demo
 Create a Minikube instance with:
@@ -21,10 +21,15 @@ Create a Minikube instance with:
 ./scripts/create-minikube.sh
 ```
 
+Deploy Kubescape with:
+```bash
+./scripts/deploy-kubescape.sh
+```
+
 If everything went OK, you can either run
 
 ```bash
-./scripts/create-network-policies.sh 
+./scripts/create-network-policies.sh
 ```
 to generate network policy objects in the [network-policies](/network-policies/) directory
 

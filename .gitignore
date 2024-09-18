@@ -1,4 +1,4 @@
 temp/*
 *.log
-network-policies/*.yml
-seccomp-profiles/*.yml
+network-policies/*.yaml
+seccomp-profiles/*.yaml
